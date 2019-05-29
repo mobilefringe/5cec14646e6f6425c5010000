@@ -64,7 +64,7 @@
                     'findBlogByName'
                 ]),
                 postList() {
-                    var blog = this.findBlogByName("What's New").posts;
+                    var blog = this.findBlogByName("What's New");
                     var vm = this;
                     var temp_blog = [];
                     _.forEach(blog, function(value, key) {
