@@ -86,7 +86,7 @@
                                 } else {
                                     value.no_image = false;
                                 }
-                                // value.body_short = _.truncate(value.body, { 'length': 100, 'separator': ' ' });
+                                value.body_short = _.truncate(value.body, { 'length': 100, 'separator': ' ' });
                                 
                                 temp_blog.push(value);
                             }
