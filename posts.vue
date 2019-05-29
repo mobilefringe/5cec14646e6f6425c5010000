@@ -72,6 +72,7 @@
                 ]),
                 postList() {
                     var blog = this.findBlogByName("What's New");
+                    console.log("blog")
                     if (blog != undefined) {
                         var posts = blog.posts;
                         var vm = this;
