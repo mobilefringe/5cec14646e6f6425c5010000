@@ -9,7 +9,11 @@
                 <div class="col-xs-12 col-sm-6 col-md-4 footer_newsletter">
                     <p class="footer_heading">NEWSLETTER SUBSCRIPTION</p>
                     <p>Stay up to date on the latest news from {{ property.name }}!</p>
-                    <form id="mktoForm_3299"></form>
+                    <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1AD66DEBC54916A7BE63E2E4C35360483AB0DB2DA48965E79CC4D18E9C811C4F8D4892CB8814A6B6CE75EC2BAFDED9B38A">	
+                        <label class="accessibility" for="fieldEmail">Email</label>
+                        <input id="fieldEmail" name="cm-ydiuhrl-ydiuhrl" type="email" class="js-cm-email-input" required />
+                        <button class="js-cm-submit-button" type="submit">Subscribe</button>
+                    </form>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <p class="footer_heading">FOLLOW US ON FACEBOOK</p>
@@ -44,7 +48,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "json!site.json", "vue!vue_facebook"], function (Vue, Vuex, moment, tz, VueMoment, site, vueFacebookPage) {
+    define(["Vue", "vuex", "moment", "moment-timezone", "vue-moment", "json!site.json", "vue!vue_facebook", "campaignMonitor"], function (Vue, Vuex, moment, tz, VueMoment, site, vueFacebookPage, campaignMonitor) {
         return Vue.component("footer-component", {
             template: template, // the variable template will be injected,
             data: function data() {
