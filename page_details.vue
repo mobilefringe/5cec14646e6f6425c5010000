@@ -29,6 +29,7 @@
         max-width: 100%;
     }
 </style>
+
 <script>
     define(["Vue", "vuex", "vue!inside_banner.vue", "vue!side_image.vue", "lightbox"], function (Vue, Vuex, insideBanner, sideImage, Lightbox) {
         Vue.use(Lightbox);
@@ -82,6 +83,8 @@
                         
                         if (_.includes(this.$route.path, "thank-you")) {
                             this.isThankYou = true;
+                        } else {
+                            this.isThankYou = false;
                         }
                             
                         var _this = this;
