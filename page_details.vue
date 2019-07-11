@@ -15,6 +15,7 @@
                         </div>
                         <div class="details_col_9">
                             <div class="page_body" v-if="currentPage" v-html="currentPage.body"></div>
+                            <img v-if="isThankYou" src="" alt="GIF of a Pickle tipping his top hat" />
                         </div>
                     </div>
                 </div>
@@ -34,7 +35,8 @@
                     dataLoaded: false,
                     pageBanner: null,
                     pageName: "Default",
-                    currentPage: {}
+                    currentPage: {},
+                    isThankYou: false
                 }
             },
             created() {
@@ -69,6 +71,8 @@
                             route_url = this.property.slug + "-privacy-policy"
                         } else if (_.includes(this.$route.path, "terms-of-use")) {
                             route_url = this.property.slug + "-terms-of-use"
+                        } else if (_.includes(this.$route.path, "thank-you")) {
+                            this.isThankYou = true;
                         } else {
                             route_url = this.id;
                         }
