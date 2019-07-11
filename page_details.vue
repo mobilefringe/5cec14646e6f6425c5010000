@@ -15,7 +15,7 @@
                         </div>
                         <div class="details_col_9">
                             <div class="page_body" v-if="currentPage" v-html="currentPage.body"></div>
-                            <iframe src="https://giphy.com/embed/3oEdva9BUHPIs2SkGk" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                            <iframe src="https://giphy.com/embed/3oEdva9BUHPIs2SkGk" width="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
                         </div>
                     </div>
                 </div>
