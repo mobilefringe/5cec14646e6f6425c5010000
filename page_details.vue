@@ -15,8 +15,7 @@
                         </div>
                         <div class="details_col_9">
                             <div class="page_body" v-if="currentPage" v-html="currentPage.body"></div>
-                            <iframe src="https://giphy.com/embed/3oEdva9BUHPIs2SkGk" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/3oEdva9BUHPIs2SkGk">via GIPHY</a></p>
-                            <img v-if="isThankYou" src="https://giphy.com/gifs/3oEdva9BUHPIs2SkGk" alt="GIF of a Pickle tipping his top hat" />
+                            <iframe src="https://giphy.com/embed/3oEdva9BUHPIs2SkGk" max-width="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
                         </div>
                     </div>
                 </div>
