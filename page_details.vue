@@ -68,15 +68,17 @@
                         // Determine the incoming route
                         var route_url = "";
                         if (_.includes(this.$route.path, "privacy-policy")) {
-                            route_url = this.property.slug + "-privacy-policy"
+                            route_url = this.property.slug + "-privacy-policy";
                         } else if (_.includes(this.$route.path, "terms-of-use")) {
-                            route_url = this.property.slug + "-terms-of-use"
-                        } else if (_.includes(this.$route.path, "thank-you")) {
-                            this.isThankYou = true;
+                            route_url = this.property.slug + "-terms-of-use";
                         } else {
                             route_url = this.id;
                         }
                         
+                        if (_.includes(this.$route.path, "thank-you")) {
+                            this.isThankYou = true;
+                        }
+                            
                         var _this = this;
                         this.property.mm_host = this.property.mm_host.replace("http:", "");
                         this.$store.dispatch('LOAD_PAGE_DATA', { url: this.property.mm_host + "/pages/" + route_url + ".json" }).then(function (response) {
