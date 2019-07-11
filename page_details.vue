@@ -15,7 +15,7 @@
                         </div>
                         <div class="details_col_9">
                             <div class="page_body" v-if="currentPage" v-html="currentPage.body"></div>
-                            <img v-if="isThankYou" src="" alt="GIF of a Pickle tipping his top hat" />
+                            <img v-if="isThankYou" src="https://giphy.com/gifs/3oEdva9BUHPIs2SkGk" alt="GIF of a Pickle tipping his top hat" />
                         </div>
                     </div>
                 </div>
