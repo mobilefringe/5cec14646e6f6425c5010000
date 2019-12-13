@@ -35,7 +35,7 @@
                                 <div class="feature_image_container">
                                     <img :src="item.image_url" alt="" />
                                 </div>
-                                <h2 class="promo_name">{{ item.name }}</h2>
+                                <h2>{{ item.name }}</h2>
                             </a>
                         </div>
                     </div>
