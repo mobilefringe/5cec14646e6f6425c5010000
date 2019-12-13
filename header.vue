@@ -98,7 +98,7 @@
                                     </div>
                                     <div class="search_component_wrapper">
                                         <div class="search_component_container">
-                                            <search-component v-if="headerReady" :list="searchList" placeholder="Search" :suggestion-attribute="suggestionAttribute" :keys="keys" v-model="search_result" @select="onOptionSelect" :autocomplete="false" :minMatchCharLength="3" :tokenize="true" class="text-left">
+                                            <search-component v-if="headerReady" inputID="fullSiteSearch" :list="searchList" placeholder="Search" :suggestion-attribute="suggestionAttribute" :keys="keys" v-model="search_result" @select="onOptionSelect" :autocomplete="false" :minMatchCharLength="3" :tokenize="true" class="text-left">
                                                 <template slot="item" scope="option" class="manual">
                                                     <article class="media">
                                                         <p>{{ option.data.name }}</p>
