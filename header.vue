@@ -30,9 +30,8 @@
                         </div>
                         <div class="header_social">
                             <span class="social_icon" v-for="item in socialInfo">
-                                <a :href="item.url" target="_blank">
+                                <a :href="item.url" target="_blank" :aria-label="'Follow Us on ' + item.name">
                                     <div>
-                                        <p class="accessibility">{{item.name}}</p>
                                         <i :class="item.iconClass" aria-hidden="true"></i>
                                     </div>
                                 </a>
@@ -90,9 +89,8 @@
     						    <div class="mobile_nav_content">
     						        <div class="header_social">
         							    <span class="social_icon" v-for="item in socialInfo">
-                                            <a :href="item.url" target="_blank">
+                                            <a :href="item.url" target="_blank" :aria-label="'Follow Us on ' + item.name">
                                                 <div>
-                                                    <p class="accessibility">{{item.name}}</p>
                                                     <i :class="item.iconClass" aria-hidden="true"></i>
                                                 </div>
                                             </a>
