@@ -13,7 +13,7 @@
 </style>
 
 <script>
-    define(["Vue", "jquery"], function (Vue, $) {
+    define(["Vue", "vuex", "jquery"], function (Vue, Vuex, $) {
         return Vue.component("VueFacebookPage", {
             template: template, // the variable template will be injected,
             props: ['data-href', 'link-text'],
