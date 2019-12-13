@@ -33,7 +33,7 @@
                         <div v-for="(item, index) in featureItems" class="col-sm-4 feature_item">
                             <a :href="item.url" :aria-label="item.name">
                                 <div class="feature_image_container">
-                                    <img :src="item.image_url" :alt="" />
+                                    <img :src="item.image_url" alt="" />
                                 </div>
                                 <h3 class="promo_name">{{ item.name }}</h3>
                             </a>
